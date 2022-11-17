@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeightLess</title>
+        <link href="style.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+               <a href="../Home/index.html" ><img src="../assets/logo.png" class="logo"></a>
+               <ul>
+                <li><a href="../Home/index.html"><b>Home</b></a></li>
+                <li><a href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+                <li><a href="../IMC/IMC.html">Cálculo IMC</a></li>
+               </ul> 
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Não é só saúde<br>É <span>WeightLess</span></h2>
+                    <p>Seu bem estar é muito importante para nossa empresa. A obesidade é uma doença caracterizada pelo excessivo 
+                        acúmulo de gordura corporal e normalmente está associada a problemas de saúde, comprometendo ainda mais 
+                        o estado do indivíduo. A obesidade é um fator de risco para várias doenças dentre as quais podemos citar:
+                         câncer, hipertensão arterial, doenças cardiovasculares, doenças cerebrovasculares, apneia do sono, 
+                         osteoartrite e diabete...</p>
+                    <a href="https://saude.to.gov.br/vigilancia-em-saude/doencas-transmissiveis-e-nao-transmissiveis-/dant/fatores-de-risco/obesidade/">Saiba Mais</a>
+                </div>
+                <div class="imgBox">
+                    <img src="../assets/food.png" class="person">
+                </div>
+            </div>
+            <ul class="imgBox2">
+                <li><img src="../assets/food.png" onclick="imgSlider('../assets/food.png')"></li>
+                <li><img src="../assets/healthy.png" onclick="imgSlider('../assets/healthy.png')"></li>
+                <li><img src="../assets/healthy2.png" onclick="imgSlider('../assets/healthy2.png')"></li>
+            </ul>
+            <ul class="social">
+                <li><a href="#"><img src="../assets/facebook.png"></a></li>
+                <li><a href="#"><img src="../assets/instagram.png"></a></li>
+                <li><a href="#"><img src="../assets/twitter.png"></a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <address>
+                Criação e Desenvolvimento: <a href="mailto:caio.barret@hotmail.com">Caio Barreto</a> &copy; 2022
+            </address>
+        </footer>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.person').src = anything;
+            }
+        </script>
+    </body>
+</html>

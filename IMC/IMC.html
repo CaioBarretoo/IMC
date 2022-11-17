@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeightLess</title>
+        <link href="style.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <section>
+            
+            <div class="container">
+                <!-- box geral -->
+                <div class="box">
+                    <!-- box left -->
+                    <div class="left">
+                        <h1>Calcule seu IMC</h1>
+                        <input type="text" placeholder="Nome ex: Carlos" id="_name">
+
+                        <select id="sex">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Não Informou">Desejo não dizer</option>
+                          </select>
+                        <input type="number" placeholder="Altura ex: 1.60" id="height">
+                        <input type="number" placeholder="Peso ex: 80 Kg" id="weight">
+                        <button id="button">Calcular</button>
+                    </div>
+
+                     <!-- box right -->
+                     <div class="right">
+                        <p>IMC é a sigla para Índice de Massa Corpórea. Parametro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+                        <p id="imcname"></p>
+                        <p id="imcsex"></p>
+                        <p id="imctext"></p>
+                        <img src="../assets/IMC.png" width="141px" height="408px" class="img" id="img">
+                     </div>
+                </div>
+            </div>
+
+            <header>
+               <a href="../Home/index.html" ><img src="../assets/logo.png" class="logo"></a>
+               <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+                <li><a href="../IMC/IMC.html"><b>Cálculo IMC</b></a></li>
+               </ul> 
+            </header>
+
+            <ul class="social">
+                <li><a href="#"><img src="../assets/facebook.png"></a></li>
+                <li><a href="#"><img src="../assets/instagram.png"></a></li>
+                <li><a href="#"><img src="../assets/twitter.png"></a></li>
+            </ul>
+
+        </section>
+
+        <footer class="footer">
+            <address>
+                Criação e Desenvolvimento: <a href="mailto:caio.barret@hotmail.com">Caio Barreto</a> &copy; 2022
+            </address>
+        </footer>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.person').src = anything;
+            }
+        </script>
+
+        <script src="imc.js"></script>
+    </body>
+</html>
